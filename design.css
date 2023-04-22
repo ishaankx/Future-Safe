@@ -1,0 +1,72 @@
+.background-image {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-image: url('bg5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-size: cover;
+	z-index: -1;
+}
+
+
+body{
+	margin: 0;
+    background-color: grey;
+    text-color: white;
+}
+h1{
+    color: whitesmoke;
+    font-family: bradley hand, cursive;
+}
+header {
+    background: transparent;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  li:last-child {
+    margin-right: 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .signup a {
+
+  }
+
+  .image a {
+	width: 20px;
+	height: 20px;
+  }
+
