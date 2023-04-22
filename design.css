@@ -45,6 +45,8 @@ header {
   ul {
     display: flex;
     list-style: none;
+    position: relative;
+    left: -91px;
   }
   
   li {
@@ -69,4 +71,6 @@ header {
 	width: 20px;
 	height: 20px;
   }
+
+
 
