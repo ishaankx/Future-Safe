@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+    Future-Safe
+    </title>
+ 
+    <style>
+ 
+.bg-img {
+  /* The image used */
+  background-image: url("back.jpg");
+
+  /* Control the height of the image */
+  min-height: 750px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat:repeat;
+  background-size: cover;
+  position: relative;
+}
+       
+         body { 
+            background-color: #000000;
+            
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        } 
+ 
+    
+        form {
+            background-color: #000000;
+            font-family: Verdana;
+            max-width: 500px;
+
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgb(177, 40, 166);
+            border-radius: 15px 50px 30px 5px;
+  background: #000000;
+  padding: 20px;
+  width: 500px;
+  height: 700px;
+  border-radius: 15px 50px 30px;
+  background: #000000;
+  padding:30px 20px;
+  width: 500px;
+  height: 700px;
+ 
+            
+        }
+ 
+        .form-control {
+            color:rgb(177, 40, 166);
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+            
+        }
+ 
+        
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+           background-color:#000000;
+           color:white;
+            
+            border: 1px solid rgb(177, 40, 166);
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+            
+        }
+ 
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+          
+            display: inline-block;
+            width: auto;
+        }
+        
+
+        
+        
+        button {
+            color:rgb(177, 40, 166);;
+            background-color: #000000;
+            border: 1px solid rgb(177, 40, 166);
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+  
+<body>
+    <div class="bg-img">
+   
+    <h1 style="color:white">Future-Safe</h1>
+
+
+    <form action="mysql_conn.php" method="post" enctype="multipart/form-data">
+        <div class="form-control">
+        <label for="text-input">Text Input:</label>
+        <textarea rows="15" cols="1" style="width: 346px; height: 181px;" name = "text"></textarea>
+      
+        <label for="image-input">Image File:</label>
+        <input type="file" id="image-input" name="image-input"><br>
+    
+        <label for="pdf-input">PDF File:</label>
+        <input type="file" id="pdf-input" name="pdf-input" accept="application/pdf"><br>
+      
+        <label for="date-input">Reminder Date:</label>
+        <input type="date" id="date-input" name="date-input"><br>
+
+        <label for="appt">Select a time:</label>
+        <select name="time"><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option></select>
+  
+        <label for="email-input">Email:</label>
+        <input type ="email" id="email-input" name="email-input"><br>
+        </div>
+        <div class="form-control">
+      
+      <button type="submit" value="Submit"> Submit</button> 
+      </form>
+      </div>
+    
+    <!-- Create Form -->
+    <!-- // -->
+   include mysql_conn.php;
+    
+</body>
+  
+</html>
